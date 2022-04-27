@@ -25,4 +25,4 @@ jobs:
     - name: build project
       run: mvn test-compile -pl jprotobuf-rpc-core -am
     - name: Test Flaky Test testGzip
-      run: mvn -pl jprotobuf-rpc-core edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.baidu.jprotobuf.pbrpc.TrunkEchoServiceTest#testGzip -DnondexRuns=10
+      run: mvn -pl jprotobuf-rpc-core edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.baidu.jprotobuf.pbrpc.TrunkEchoServiceTest#testGzip -DnondexRuns=50
